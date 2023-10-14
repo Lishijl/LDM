@@ -1,0 +1,72 @@
+/* Aquest document .CSS, servirà per canviar l'estil del document css-selectors-prioritats.html mitjançant de external CSS i observar els canvis de prioritats 
+*  degut a l'ordre dels documents estils_inicials.css i sobreescriptura_estil.css en que a aquest li apliquem els canvis que ens interessa. */
+
+/* 1. A l'element body li apliquem el color general de la lletra en negre. Tot i que per conservar el color després del canvi d'ordre de fitxers, jo l'hagués
+*  deixat com (boody > div) ja que aplicaria per tota la divisió que descendeix de body y es més selectiu que només amb l'etiqueta <label> o body. */
+body{
+    color:black;
+}
+/* 2. A l'element h1 el seleccionem com a #titol-pagina per indicar-li que el fons del text sigui de color blanc i la lletra de color gris. */
+#titol-pagina{
+    background-color: white;
+    color: grey;
+}
+/* 3. Aquí es podía utilitzar tant com (#container strong) com (.paragraf1 strong, .paragraf2 strong) que selecciona dos elements alhora i els posa en verd i subratllats,
+*  els dos cumpleixen la funció, només que si pretens conservar els canvis en el canvi d'ordre dels fitxers .css, millor el (#container strong) ja que selecciona a tots
+*  els strongs que descendeixen directament i aplica el color verd al text i estaràn subratllats, d'altra banda, la coma ha servit per arribar la nota màxima que demana al final de la pràctica. */
+.paragraf1 strong, .paragraf2 strong{
+    color: green;
+    text-decoration-line: underline;
+}
+/* 4. Només els enllaços que són seleccionats amb (.paragraf2 a) estaràn en cursiva (italic). */
+.paragraf2 a{
+    font-style: italic;
+}
+/* 5. El es selecciona el footer general amb (div >footer) per centrar i canviar al tamany 10px només del últim footer. */
+div > footer{
+    text-align: center;
+    font-size: 10px;
+}
+
+/* 6. El canviar l'ordre de càrrega dels fitxers .css de posar el fitxer "sobreescriptura_estils.css" abans de "estils_inicials.css", per lògica en principi
+*  si hi ha un empat de prioritats pels selectors d'elements, el navegador renderitzaría la última instrucció, tot i que els dos tinguin el mateix selector,
+*  tipus id o class, etc. Però, en aquest cas l'haguessim deixat com ho hauriem fet nosaltres per conservar els canvis en els llocs de (body > div) enlloc de només (body)
+*  i (#container strong) enlloc de (.paragraf1 strong, .paragraf2 strong), però l'hem tornat a modificar per tal de forçar-nos a aplicar l'etiqueta <label> i la coma (,)
+*  per arribar la màxima nota possible, encara que ja es podía veure que els sabiem utilitzar pel fet d'haverho explicat en els comentaris just sobre aquests elements.
+*  Per tant, el haver implementat l'ús de la coma i l'etiqueta, ha fet que sigui en aquests dos casos siguin menys específic que els elements que es troben a l'arxiu
+*  "estils_inicials.css", i s'hagi renderitzat en l'exercici 1 i 3 les seleccions del darrer arxiu "estils_inicials.css". Per evitar-ho i conservar els canvis que a
+*  nosaltres ens interessa (#container strong) > (.paragraf1 strong, .paragraf2 strong) és més específic i també (body > div) > (body), amb això els canvis que ens
+*  interessa es mantindrà, i només en casos de que hi hagi un inline CSS en el fitxer .html o un "!important" dins de qualsevol altre selecció del .css, superarà la
+*  prioritat del selector id. */
+
+/*  6.a - Es veuen diferent els elements (body) i (.paragraf1 strong, .paragraf2 strong), perquè en el darrer arxiu "estils_inicials.css" tenen un selector que empata i 
+*   el navegador renderitza el que conté l'últim arxiu si tenen el mateix selector. Els elements que es continuen veient tal i com hem definit són (#titol-pagina),
+*  (.paragraf2 a) i (div > footer), ja sigui perquè és més específic com (#titol-pagina) en l'arxiu sobreescrit o per l'absència de la definició d'aquests elements
+*  en el fitxer "estils_inicials.css".
+/*  6.b - Proposta d'un codi CSS.
+
+*   body{
+*       color:black;
+*   }
+*   #titol-pagina{
+*       background-color: white;
+*       color: grey;
+*   }
+*   .paragraf1 strong, .paragraf2 strong{
+*       color: green;
+*       text-decoration-line: underline;
+*   }
+*   .paragraf2 a{
+*       font-style: italic;
+*   }
+*   div > footer{
+*       text-align: center;
+*       font-size: 10px;
+*   } */
+
+/* Selector per ID  :   #titol-pagina
+*  Selector per classe  :   .paragraf1 o .paragraf2
+*  Selector per etiqueta  :   body
+*  Espai per seleccionar child	:  .paragraf2 a
+*  Coma per seleccionar dos elements  :   .paragraf1 strong, .paragraf2 strong
+*  Child/sibling selector (>, +, ~)  :   div > footer */
