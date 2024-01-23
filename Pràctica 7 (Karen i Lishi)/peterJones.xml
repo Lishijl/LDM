@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<perfil> <!-- aixo engloba tot, que letiqueta faci referencia bona, del seu contingut, aquí ens ha faltat l'element root (ho he implementat en la correció, la resta he vis que no, eren comentaris per a mi) -->
+    <basic_info>
+        <name>Peter</name>
+        <surname>Jones</surname>
+        <age>19</age>
+        <height>1.78</height>
+        <job>Informàtic</job>
+        <favorite_simile>&lt;3</favorite_simile>  <!-- si volem incloure simbol, posem (&ld); (si vols que es vegi el punt i coma, estaba inclos) -->
+        <pets>
+            <animal>black cat</animal>  <!-- (fals, ho teniem bé)pots fer etiqueta pets i <pets>black cat, chiwawa</pets> es posible si no es un llistat, ocupa menys caracters, es lo mateix que -->
+            <animal>chiwawa</animal> <!-- no podem fer lo anterior perque es perd informacio, (no la mantenim de la mateixa manera) --> <!-- com que xml no te index no importa perdrel, -->
+        </pets>
+        <address>
+            <street>Pau Claris</street>
+            <number>121</number>
+            <cp>08012</cp>
+        </address>
+    </basic_info>
+    <social_media>
+        <instagram>
+            <user>pjones22</user>
+            <email>pjones22@gmail.com</email>
+        </instagram>
+        <twitter>true</twitter>
+    </social_media>
+    <friends>
+        <num1>
+            <name>Jhon</name>
+            <surname>Doe</surname>
+            <age>35</age>
+        </num1>
+        <num2>
+            <name>Anna</name>
+            <surname>Smith</surname>
+            <age></age>
+        </num2>
+    </friends>
+</perfil>

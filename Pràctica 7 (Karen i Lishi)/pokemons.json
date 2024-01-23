@@ -1,0 +1,80 @@
+{
+    "pokemons":[
+        {
+            "name":"Bulbasaur",
+            "tipus": ["Planta", "Veneno"],
+            "pes":"6.9kg",
+            "altura":"0.7m",
+            "img_url":"https:\/\/www.assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+            "estadistiques":{
+                "velocitat":3,
+                "fortalesa":3,
+                "presicio":4,
+                "resistencia":4
+            },
+            "movimientos": [
+                {
+                    "nom":"Placaje",
+                    "descripcio":"Placaje causa daño y no tiene ningún efecto secundario. Este movimiento tiene una potencia de 35 y una precisión del 95%.",
+                    "potencia":40,
+                    "contacto": true
+                },
+                {
+                    "nom":"gruñido",
+                    "descripcio": "Gruñido es un movimiento de sonido que baja un nivel el ataque del objetivo. En combates dobles y triples afecta a los oponentes adyacentes. No afecta a Pokémon con las habilidades corte fuerte, cuerpo puro, humo blanco, guardia metálica o insonorizar.",
+                    "potencia":null,
+                    "contacto": false
+                }
+            ],
+            "evolucions": [
+                {
+                    "identificador": "002",
+                    "name": "ivysaur",
+                    "nivel": 16
+                },
+                {
+                    "identificador": "003",
+                    "name": "venusaur",
+                    "nivel": 32
+
+                }
+            ]
+        },
+        {
+            "name": "Spearow",
+            "tipus":["nomal","volador"],
+            "pes":"2kg",
+            "altura":"0,3m",
+            "img_url":"https:\/\/www.assets.pokemon.com/assets/cms2/img/pokedex/full/021.png",
+            "estadistiques":{
+                "velocitat":5,
+                "fortalesa":4,
+                "presicio":3,
+                "resistencia":3
+            },
+            "movimientos": [
+                {
+                    "nom":"Malicioso",
+                    "descripcio":"Malicioso baja un nivel la defensa del objetivo. En combates dobles y triples afecta a todos los oponentes adyacentes al usuario.",
+                    "potencia":null,
+                    "contacto": false   
+                },
+                {
+                    "nom": "ataque",
+                    "descripcio":"Ataque ala causa daño y no tiene ningún efecto secundario. El movimiento tiene una potencia de 35.",
+                    "potencia":60,
+                    "contacto": true
+
+                }
+                
+            ],
+            "evolucions": [
+                {
+                    "identificador": "0022",
+                    "name": "Fearow",
+                    "nivel": 20
+                }
+            ]          
+        }  
+    ]
+}
