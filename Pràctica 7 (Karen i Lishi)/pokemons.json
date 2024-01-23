@@ -3,8 +3,8 @@
         {
             "name":"Bulbasaur",
             "tipus": ["Planta", "Veneno"],
-            "pes":"6.9kg",
-            "altura":"0.7m",
+            "pes":{"valor": 6.9, "unidad": "kg"},
+            "altura":{"valor": 6.9, "unidad": "kg"},
             "img_url":"https:\/\/www.assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
             "estadistiques":{
                 "velocitat":3,
@@ -43,8 +43,8 @@
         {
             "name": "Spearow",
             "tipus":["nomal","volador"],
-            "pes":"2kg",
-            "altura":"0,3m",
+            "pes":{"valor": 2, "unidad": "kg"},
+            "altura":{"valor": 0.3, "unidad": "m"},
             "img_url":"https:\/\/www.assets.pokemon.com/assets/cms2/img/pokedex/full/021.png",
             "estadistiques":{
                 "velocitat":5,
