@@ -4,7 +4,7 @@
             "name":"Bulbasaur",
             "tipus": ["Planta", "Veneno"],
             "pes":{"valor": 6.9, "unidad": "kg"},
-            "altura":{"valor": 6.9, "unidad": "kg"},
+            "altura":{"valor": 6.9, "unidad": "kg"},        // aquí realment ho he posat bé en el segon pokemon, ha sigut un descuit del copiar i pegar
             "img_url":"https:\/\/www.assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
             "estadistiques":{
                 "velocitat":3,
